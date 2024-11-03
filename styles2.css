@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #444;
+    background-image: url('trash-pollution-electronics.jpg'); /* Set background image */
+
+    padding: 20px;
+}
+
+/* Main Layout */
+main {
+    max-width: 900px; /* Increased width for a more spacious layout */
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8em; /* Larger font size for more impact */
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 2em; /* Increased heading size */
+    color: #34495e;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #3498db; /* Thicker border for more emphasis */
+    margin-bottom: 20px;
+}
+
+/* Article Styling */
+article {
+    margin-bottom: 18px;
+    padding: 20px; /* More padding for better spacing */
+    background-color: rgba(249, 249, 249, 0.9); /* Slightly transparent background */
+    border-left: 4px solid #3498db;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+article:hover {
+    background-color: rgba(227, 242, 253, 0.9); /* Light background on hover */
+    border-color: #1e88e5;
+}
+
+article h3 {
+    font-size: 1.5em; /* Increased heading size for articles */
+    color: #2980b9;
+    margin-bottom: 10px; /* Slightly more space below */
+}
+
+article p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6; /* Slightly more line height for readability */
+}
+
+/* Special Styling for Final Section */
+section:last-of-type p {
+    font-size: 1.1em;
+    color: #333;
+    padding: 20px; /* Increased padding for emphasis */
+    background-color: rgba(240, 248, 255, 0.9); /* Slightly transparent background */
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2.2em; /* Adjusting size for smaller screens */
+    }
+    section h2 {
+        font-size: 1.7em; /* Adjusting size for smaller screens */
+    }
+    article h3 {
+        font-size: 1.3em; /* Adjusting size for smaller screens */
+    }
+    article p {
+        font-size: 0.95em; /* Adjusting size for smaller screens */
+    }
+}

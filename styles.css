@@ -1,0 +1,256 @@
+/* General Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333e4f; /* Dark, neutral text */
+    background-color: #f4f7f6; /* Soft, near-white background */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #246a73; /* Muted, nature-inspired green-blue */
+    color: #f4f7f6; /* Light, clean text */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f4f7f6;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #5b8c85; /* Soft greenish hue */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Content */
+main {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+img {
+    max-width: 900px;
+}
+
+section {
+    margin-bottom: 60px;
+    background-color: #d3e0df; /* Soft, off-white for section background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #6d8391; /* Subtle English violet */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+section p, section ul {
+    color: #333e4f;
+    font-size: 1.1em;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+/* Map */
+#map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e1eff3; /* Light blue-gray background for map */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Map iframe */
+#map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* E-Waste Calculator */
+form#ewaste-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form#ewaste-form input, form#ewaste-form button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form#ewaste-form button {
+    background-color: #246a73;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form#ewaste-form button:hover {
+    background-color: #2d8c95; /* Slightly brighter shade */
+}
+
+#result {
+    font-size: 1.2em;
+    color: #246a73;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #246a73;
+    color: #f4f7f6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #6d8391; /* English violet accent */
+    font-weight: 700;
+}
+
+/* Main Contact Form Container */
+footer form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    background: #e1eff3;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+footer form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Fields */
+footer form input,
+footer form textarea {
+    background: #d3e0df;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1em;
+    color: #333e4f;
+    margin: 12px 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+footer form input:focus,
+footer form textarea:focus {
+    outline: none;
+    background: #e1eff3;
+    box-shadow: 0 0 10px rgba(109, 131, 145, 0.3), inset 0 0 10px rgba(109, 131, 145, 0.2);
+}
+
+/* Button */
+footer form button {
+    background-color: #246a73;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer form button:hover {
+    background-color: #2d8c95;
+    transform: translateY(-3px);
+}
+
+/* Placeholder Text */
+footer form input::placeholder,
+footer form textarea::placeholder {
+    color: #7f9ba6;
+    font-style: italic;
+}
+
+/* Smooth Glow Effect */
+footer form input:focus::placeholder,
+footer form textarea:focus::placeholder {
+    color: transparent;
+}
+
+/* Message Textarea Resizing */
+footer form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+a {
+    color: #2d8c95; /* Muted blue-green link color */
+}
+
+a:active {
+    color: #6d8391; /* Soft English violet when clicked */
+}
+
+.last{
+    color:#2d8c95;
+}
+
+.inline-img {
+    max-width: 100%;
+    width: 400px; /* Adjust width as desired */
+    float: right;
+    margin: 0 0 10px 20px; /* Space around the image */
+    border-radius: 10px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
